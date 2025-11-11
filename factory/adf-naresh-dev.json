@@ -1,0 +1,29 @@
+{
+	"name": "adf-naresh-dev",
+	"properties": {
+		"globalParameters": {
+			"Source_Continer": {
+				"type": "string",
+				"value": "adlsgen2containernaresh"
+			},
+			"Source_Path": {
+				"type": "string",
+				"value": "source"
+			},
+			"Target_continer": {
+				"type": "string",
+				"value": "adlsgen2containernaresh-target"
+			},
+			"Target_Path": {
+				"type": "string",
+				"value": "target"
+			}
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c9d46b33-b0d5-48e2-aef7-5dfa9e104f8d",
+		"tenantId": "aee97b9e-44e9-4ae5-a754-c51594d2fee8"
+	}
+}

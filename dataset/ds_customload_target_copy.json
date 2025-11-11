@@ -1,0 +1,31 @@
+{
+	"name": "ds_customload_target_copy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azuresql_target_server",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SchemeName": {
+				"type": "string"
+			},
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().SchemeName",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

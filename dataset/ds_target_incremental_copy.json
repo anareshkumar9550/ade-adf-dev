@@ -1,0 +1,17 @@
+{
+	"name": "ds_target_incremental_copy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azuresql_target_server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "employees"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
